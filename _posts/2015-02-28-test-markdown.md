@@ -12,11 +12,11 @@ tags:
 published: true
 ---
 
-Hello World [Hello World](https://xuuuuuuchen.github.io/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+Hello World
+[Hello World](https://xuuuuuuchen.github.io/)
+**Hello World**
 
-**Here is some bold text**
-
-## Here is a secondary heading
+## Hello World
 
 Here's a useless table:
 
