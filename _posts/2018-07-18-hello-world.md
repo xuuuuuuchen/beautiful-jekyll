@@ -3,6 +3,7 @@ layout: post
 published: false
 title: Hello World
 subtitle: Hello World
+bigimg: /img/path.jpg
 image: http://blog.ionic.io/wp-content/uploads/2016/03/hello-world-ionic2.png
 tags: [Hello World, Hello, World]
 ---
