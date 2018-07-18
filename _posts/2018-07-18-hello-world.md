@@ -12,7 +12,7 @@ Hello World
 
 _Hello World_
 
-[Hello World](https://xuuuuuuchen.github.io/)
+[Hello World](https://xuchen.github.io/)
 
 **Hello World**
 
