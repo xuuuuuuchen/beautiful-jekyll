@@ -5,6 +5,17 @@
 #   baseURL: Define a base URL which will be combined with the value of
 #            site.social-network-links.<key>
 #   icon: Specify a valid fontawesome icon class
+
+weixin:
+  name: "weixin"
+  baseURL: "https://www.facebook.com/"
+  icon: "fa-weixin"
+
+weibo:
+  name: "weibo"
+  baseURL: "https://www.weibo.com/"
+  icon: "fa-weibo"
+
 facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"
