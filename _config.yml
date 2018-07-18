@@ -70,22 +70,22 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  #rss: true
+  rss: true
   email: "xuuuuuuchen@gmail.com"
-  facebook: xu.chen.12576
-  #github: xuuuuuuchen
-  twitter: xuuuuuuchen
   instagram: xuuuchen
+  facebook: xu.chen.12576
+  github: xuuuuuuchen
+  twitter: xuuuuuuchen
+  linkedin: in/xuchen3
+  #reddit: yourname
   #weibo:xuuuuuuchen
-  #linkedin: Xu Chen
-  #snapchat: deanat78
-  
-#  reddit: yourname
+  #spotify: yourname
+
 #  google-plus: +DeanAttali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  youtube: user/deanat78
-#  spotify: yourname
+
 #  telephone: +14159998888
 #  steam: deanat78
 #  twitch: yourname
