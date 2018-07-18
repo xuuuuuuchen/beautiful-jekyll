@@ -17,20 +17,21 @@ baseurl: ""
 title: Xu Chen's HomePage
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: Welcome to Xu Chen's HomePage
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  Resources:
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  aa: 
-    - "http://deanattali.com"
-    - "http://deanattali.com"
+  Categories:
+    - A: "http://xuuuuuuchen.github.io"
+    - B: "http://xuuuuuuchen.github.io"
+  Categories: 
+    - A: "http://xuuuuuuchen.github.io"
+    - B: "http://xuuuuuuchen.github.io"
   About Me: 
-    - "aboutme"
+    - "http://xuuuuuuchen.github.io"
+    - About Me: "aboutme"
   
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -111,7 +112,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "xuuuuuuchen.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "xuuuuuuchen.github.io" 
 
 # --- Web Statistics Section --- #
 
