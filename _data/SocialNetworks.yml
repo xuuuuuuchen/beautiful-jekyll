@@ -13,7 +13,7 @@ weixin:
 
 weibo:
   name: "weibo"
-  baseURL: "https://www.weibo.com/"
+  baseURL: "https://www.facebook.com/"
   icon: "fa-weibo"
 
 facebook:
