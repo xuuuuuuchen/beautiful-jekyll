@@ -25,17 +25,12 @@ _Hello World_
 
 ![Crepe](http://blog.ionic.io/wp-content/uploads/2016/03/hello-world-ionic2.png)
 
-
-
-Here's a code chunk:
 ~~~
 var foo = function(x) {
   return(x + 5);
 }
 foo(3)
 ~~~
-
-And here is the same code with syntax highlighting:
 
 ```javascript
 var foo = function(x) {
@@ -44,8 +39,6 @@ var foo = function(x) {
 foo(3)
 ```
 
-And here is the same code yet again but with line numbers:
-
 {% highlight javascript linenos %}
 var foo = function(x) {
   return(x + 5);
@@ -53,21 +46,17 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
 ### Notification
 
 {: .box-note}
-**Note:** This is a notification box.
+**Note:** This is a notification Hello World.
 
 ### Warning
 
 {: .box-warning}
-**Warning:** This is a warning box.
+**Warning:** This is a warning Hello World.
 
 ### Error
 
 {: .box-error}
-**Error:** This is an error box.
+**Error:** This is an error Hello World.
