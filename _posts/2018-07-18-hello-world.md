@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: Ture
 title: Hello World
 subtitle: Hello World
 bigimg: /img/path.jpg
