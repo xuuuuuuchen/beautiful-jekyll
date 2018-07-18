@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://xuuuuuuchen.github.io"
+url: "http://xuchen.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -84,7 +84,6 @@ social-network-links:
 #  google-plus: +DeanAttali
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
-
 #  youtube: user/deanat78
 #  spotify: yourname
 #  telephone: +14159998888
@@ -106,13 +105,13 @@ url-pretty: "xuchen.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
+google_analytics: ""
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: ""
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
