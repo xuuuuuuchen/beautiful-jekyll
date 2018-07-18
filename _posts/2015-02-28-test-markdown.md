@@ -13,27 +13,25 @@ published: true
 ---
 
 Hello World
+
+_Hello World_
+
 [Hello World](https://xuuuuuuchen.github.io/)
+
 **Hello World**
 
 ## Hello World
 
-Here's a useless table:
-
-| Number | Next number | Previous number |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
+| Hello | World |
+| :------ |:--- | 
+| Hello | World | 
 
 
-How about a yummy crepe?
+![Crepe](http://blog.ionic.io/wp-content/uploads/2016/03/hello-world-ionic2.png)
 
-![Crepe](http://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+
 
 Here's a code chunk:
-
 ~~~
 var foo = function(x) {
   return(x + 5);
@@ -58,6 +56,7 @@ var foo = function(x) {
 }
 foo(3)
 {% endhighlight %}
+
 
 ## Boxes
 You can add notification, warning and error boxes like this:
