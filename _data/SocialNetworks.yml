@@ -5,7 +5,6 @@
 #   baseURL: Define a base URL which will be combined with the value of
 #            site.social-network-links.<key>
 #   icon: Specify a valid fontawesome icon class
-
 facebook:
   name: "Facebook"
   baseURL: "https://www.facebook.com/"
