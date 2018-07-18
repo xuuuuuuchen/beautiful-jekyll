@@ -74,7 +74,7 @@ social-network-links:
   email: "xuuuuuuchen@gmail.com"
   instagram: xuuuchen
   facebook: xu.chen.12576
-  github: xuuuuuuchen
+  #github: xuuuuuuchen
   twitter: xuuuuuuchen
   linkedin: in/xuchen3
   #reddit: yourname
@@ -100,7 +100,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "xuchen.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "xuuuuuuchen.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -242,5 +242,3 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
