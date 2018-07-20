@@ -24,9 +24,8 @@ description: Welcome to Xu Chen's HomePage
 # List of links in the navigation bar
 navbar-links:
   Categories: "categories"
-  Categories: 
+  categies: 
     - A: "http://xuuuuuuchen.github.io"
-    - B: "http://xuuuuuuchen.github.io"
   About Me: "http://xuuuuuuchen.github.io"
 
   
