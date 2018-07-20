@@ -6,7 +6,7 @@
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
 url: "https://xuuuuuuchen.github.io/categories/"
 baseurl: ""
-title: Xu Chen's 🏠
+title: Xu's 🏠
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
@@ -23,11 +23,10 @@ description: Welcome to Xu Chen's HomePage
 
 # List of links in the navigation bar
 navbar-links:
+  What's new: "https://xuuuuuuchen.github.io/"
   Categories: "categories"
-  categies: 
-    - A: "http://xuuuuuuchen.github.io"
   About Me: "aboutme"
-
+  中文: "https://xuuuuuuchen.github.io/tag/Reading%20Note"
   
 
 # Image to show in the navigation bar - image must be a square (width = height)
