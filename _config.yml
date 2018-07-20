@@ -23,15 +23,12 @@ description: Welcome to Xu Chen's HomePage
 
 # List of links in the navigation bar
 navbar-links:
-  Categories:
-    - A: "http://xuuuuuuchen.github.io"
-    - B: "http://xuuuuuuchen.github.io"
+  Categories: "categories"
   Categories: 
     - A: "http://xuuuuuuchen.github.io"
     - B: "http://xuuuuuuchen.github.io"
-  About Me: 
-    - "http://xuuuuuuchen.github.io"
-    - About Me: "aboutme"
+  About Me: "http://xuuuuuuchen.github.io"
+
   
 
 # Image to show in the navigation bar - image must be a square (width = height)
