@@ -1,3 +1,5 @@
+
+
 # --- General options --- #
 
 # url is the full website URL
@@ -80,7 +82,7 @@ social-network-links:
   #rss: true
   #email: "xuuuuuuchen@gmail.com"
   instagram: xuuuchen
-  facebook: xu.chen.12576
+  #facebook: xu.chen.12576
   #github: xuuuuuuchen
   twitter: xuuuuuuchen
   linkedin: xuchen3
@@ -102,8 +104,8 @@ social-network-links:
 share-links-active:
   twitter: true
   facebook: true
-  #google: true
-  #linkedin: true
+  google: true
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -112,10 +114,10 @@ url-pretty: "xuuuuuuchen.github.io"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: ""
+gtag: "UA-122664520-1"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: ""
+google_analytics: "UA-122664520-1"
 
 # Google Tag Manager ID
 gtm: ""
