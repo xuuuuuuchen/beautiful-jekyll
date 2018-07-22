@@ -1,12 +1,14 @@
+
+
 # --- General options --- #
 
 # url is the full website URL
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://xuuuuuuchen.github.io"
+url: "https://xuuuuuuchen.github.io/categories/"
 baseurl: ""
-
+title: Xu's 🏡
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
 #baseurl: "/projectname"
@@ -14,24 +16,19 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Xu Chen's 🏠
+
 
 # Short description of your site
-description: Welcome to Xu Chen's HomePage
+description: Welcome! ღ( ´･ᴗ･` )比心
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
-  Categories:
-    - A: "http://xuuuuuuchen.github.io"
-    - B: "http://xuuuuuuchen.github.io"
-  Categories: 
-    - A: "http://xuuuuuuchen.github.io"
-    - B: "http://xuuuuuuchen.github.io"
-  About Me: 
-    - "http://xuuuuuuchen.github.io"
-    - About Me: "aboutme"
+  What's New: "https://xuuuuuuchen.github.io/"
+  Library: "categories"
+  About Me: "aboutme"
+  中文🇨🇳: "https://xuuuuuuchen.github.io/tag/Reading%20Note"
   
 
 # Image to show in the navigation bar - image must be a square (width = height)
@@ -85,12 +82,12 @@ social-network-links:
   #rss: true
   #email: "xuuuuuuchen@gmail.com"
   instagram: xuuuchen
-  facebook: xu.chen.12576
+  #facebook: xu.chen.12576
   #github: xuuuuuuchen
   twitter: xuuuuuuchen
   linkedin: xuchen3
   #reddit: yourname
-  weibo: CristianChen?refer_flag=1001030201_
+  #weibo: CristianChen?refer_flag=1001030201_
   #spotify: yourname
 
 #  google-plus: +DeanAttali
@@ -107,8 +104,8 @@ social-network-links:
 share-links-active:
   twitter: true
   facebook: true
-  #google: true
-  #linkedin: true
+  google: true
+  linkedin: true
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
@@ -117,10 +114,10 @@ url-pretty: "xuuuuuuchen.github.io"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-gtag: ""
+gtag: "UA-122664520-1"
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: ""
+google_analytics: "UA-122664520-1"
 
 # Google Tag Manager ID
 gtm: ""
