@@ -70,15 +70,17 @@ and 2 out-of-plane rotation parameters.
 The effects of out-of-plane translation and rotations are scaling and shape changes, respectively.
 
 
+## 2-D/3-D Registration
 
-## X-Ray Imaging Model 
+The inputs for 2-D/3-D registration are:
 
+1. a 3-D object described by its X-ray attenuation map (衰减图)
+2. an X-ray image, where denotes the unknown ground truth transformation parameters
+3. initial transformation parameters. 
 
-## Limitations
+The 2-D/3-D registration problem can be formulated as a regression problem, where:
 
-
-*
-
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-07-23-readnote/1.png?raw=true) 
 
 ## Performance
 
