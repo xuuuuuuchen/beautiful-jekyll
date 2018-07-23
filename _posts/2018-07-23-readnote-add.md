@@ -8,7 +8,7 @@ image: https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/0b3369b950ca9b2
 tags: [Reading Note, Convolutional Neural Network, Image Registration]
 ---
 
-**Title:** Quicksilver: Fast predictive image registration – A deep learning approach [Paper Link](https://arxiv.org/abs/1703.10908)
+**Title:** A CNN Regression Approach for Real-Time 2D/3D Registration [Paper Link](https://ieeexplore.ieee.org/document/7393571/)
 
 **Authors:** Shun Miao, Z. Jane Wang, Rui Liao
 
@@ -21,62 +21,41 @@ tags: [Reading Note, Convolutional Neural Network, Image Registration]
 {: .box-note}
 **Image registration** is a key component for medical image analysis to provide spatial correspondences.
 
+
+| Supervised learning for 2-D/3-D registration | learning regressors for 2-D/3-D registration |
+| :------ |:--- | 
+| YOLO  | Faster R-CNN | 
+
+
+ to
+
+
 ## Contributions
 
-**(0)** introduces Quicksilver, a fast deformable image registration method.
+**(1)** A CNN regression approach, referred to as Pose Estimation via Hierarchical Learning (PEHL), is proposed to achieve real-time 2-D/3-D registration with a large capture range and high accuracy.
 
-**(1)** propose a deep regression model to predict defor-
-mation parameters using image appearances in a time-efficient manner.
+**(2)** to train CNN regressors to recover the mapping from the DRR and X-ray images to the difference of their underlying transforma- tion parameters. Such
 
-**(2)** focus on predictions for the Large Deformation Diffeomorphic Metric Mapping (LDDMM) model.
+**(3)** 
 
-**(3)** introduce a new correction network which greatly increases the prediction accuracy of an already existing prediction network. 
+**(4)** 
 
-**(4)** open-source  [https://github.com/rkwitt/quicksilver](https://github.com/rkwitt/quicksilver) 
 
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S1053811917305761-gr1.jpg) 
 
-## Background
+## Digitally Reconstructed Radiograph (DRR)
 
-Image registration = an optimization problem = optimizing the parameters of a transformation model
-
-**Process:**
-1. Detect features.
-An image feature is any protion of an image that can potentially be identified. Features can be points, lines, or corners, etc.
-
-2. Match corresponinging features.
-
-3. Infer geometric transformation.
-Fom the sets of matched-feature pairs, a geometric transformation function is inferred that maps features in one image onto the locations of the matching features in the other.
-
-4. Use the geometric transformation to align one image with the other.
-
-**type of transformation**
-
-- Low-dimensional parametric registration models: affine, rigid
-- High-dimensionalparametric registration models
-- Non-parametric parametric registration models
-
-{: .box-note}
-**However,**  Non-parametric parametric registration models have a very large numbers of parameters. Therefore, numerical optimzation to solve the registration problems becomes computationally costly, even with acceleration by graphics processing units (GPUs).
 
 
 ## Motivation
 
-**(1)**  "achieve the best possible agreement between a transformed source and a target image, subject to transformation constraints."
+**(1)** Intensity-based methods are known to be able to achieve high registration accuracy 
+--- *“A comparison of 2D-3D intensity-based registration and feature-based registration for neurointerventions,” in Proc. MICCAI, 2002*,
+two major drawbacks: (1) long computation time (2) small capture range (because intensity-based methods involve a large number of evaluations of the **similarity measure**, each requiring heavy computation in rendering the DRR)
 
-
+**(2)** the similarity measures to be optimized in Intensity-based methods often highly **non-convex**, the optimizer **has a high chance of getting trapped into local maxima**, which leads to a small capture range of these methods.
 
 ## Network Design
-
-![](https://ars.els-cdn.com/content/image/1-s2.0-S1053811917305761-gr2.jpg) 
-
-" Fig. 2. 3D (probabilistic) network architecture. The network takes two 3D patches from the moving and target image as the input, and outputs 3 3D initial momentum patches (one for each of the x; y and z dimensions respectively; for readability, only one decoder branch is shown in the figure). In case of the deterministic network, see Sec. 2.2.1, the dropout layers, illustrated by , are removed. Conv: 3D convolution layer. Conv⊺: 3D transposed convolution layer. Parameters for the Conv and Conv⊺ layers: In: input channel. Out: output channel. Kernel: 3D filter kernel size in each dimension. Stride: stride for the 3D convolution. Pad: zero-padding added to the boundaries of the input patch. Note that in this illustration B denotes the batch size."
-
-![](https://ars.els-cdn.com/content/image/1-s2.0-S1053811917305761-gr3.jpg) 
-
-"Fig. 3. The full prediction þ correction architecture for LDDMM momenta. First, a rough prediction of the initial momentum, mLP, is obtained by the prediction network (LP) based on the patches from the unaligned moving image, Mand target image, T, respectively. The resulting deformation maps Φ?1 and Φ are computed by shooting. Φ is then applied to the target image to warp it to the space of the moving image. A second correction network is then applied to patches from the moving image M and the warped target image T∘Φ to predict a correction of the initial momentum, mC in the space of the moving image, M. The final momentum is then simply the sum of the predicted momenta, m ¼ mLP þmC, which parameterizes a geodesic between the moving image and the target image."
-2.4.
 
 ## Limitations
 
