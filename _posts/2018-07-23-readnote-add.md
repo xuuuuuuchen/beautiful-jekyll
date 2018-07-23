@@ -2,22 +2,21 @@
 layout: post
 published: Ture
 category: "Image Registration"
-title: 23 Jul 2018 Reading Note
-subtitle: Quicksilver (Fast predictive image registration – A deep learning approach)
-image: https://ars.els-cdn.com/content/image/1-s2.0-S1053811917305761-gr8.jpg
+title: 23 Jul 2018 Reading Note add
+subtitle: A CNN Regression Approach for Real-Time 2D 3D Registration
+image: https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/0b3369b950ca9b273b24a72b6023981d31b68ae2/2-Figure2-1.png
 tags: [Reading Note, Convolutional Neural Network, Image Registration]
 ---
 
 **Title:** Quicksilver: Fast predictive image registration – A deep learning approach [Paper Link](https://arxiv.org/abs/1703.10908)
 
-**Authors:** Xiao Yang, Roland Kwitt, Martin Styner, Marc Niethammer
+**Authors:** Shun Miao, Z. Jane Wang, Rui Liao
 
-**Association:** University of North Carolina at Chapel Hill, Chapel Hill, USA
+**Association:** Department of Electrical and Computer Engineering, University of British Columbia, Vancouver, Canada
 
-**Submission:** Jul 2017 
+**Submission:** May 2016
 
-![](https://ars.els-cdn.com/content/image/1-s2.0-S1053811917305761-gr8.jpg) 
-"Failure case for IBSR18 dataset where LDDMM optimization generated very extreme deformations. From left to right: (a): moving image; (b): target image; (c): LDDMM optimization result; (d): predictionþcorrection result (LPC); (e): heatmap showing the differences between the optimization deformation and predicted deformation in millimeters. Most registration errors occur in the area of the cerebellum, which has been inconsistently preserved in the moving and the target images during brain extraction. Hence, not all the retained brain regions in the moving image have correspondences in the target image. Best-viewed in color."
+![](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/0b3369b950ca9b273b24a72b6023981d31b68ae2/2-Figure2-1.png) 
 
 {: .box-note}
 **Image registration** is a key component for medical image analysis to provide spatial correspondences.
