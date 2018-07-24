@@ -78,9 +78,27 @@ The inputs for 2-D/3-D registration are:
 2. an X-ray image, where denotes the unknown ground truth transformation parameters
 3. initial transformation parameters. 
 
-The 2-D/3-D registration problem can be formulated as a regression problem, where:
+The 2-D/3-D registration problem can be formulated as **a regression problem**, where:
 
 ![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-07-23-readnote/1.png?raw=true) 
+
+
+**Problem 1:** As feature depends on transformation parameters, the target mapping could vary significantly as changes, which makes it highly complex and difficult to be accurately recovered.
+
+**Solution 1:** extracting a feature that is **sensitive** to the parameter residuals (残差) and is **insensitive** to the parameters. Such feature is referred to as **pose-index** feature.
+
+## Hierarchical Parameter Regression
+
+
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-07-23-readnote/2.png?raw=true) 
+
+1. 
+
+2. an X-ray image, where denotes the unknown ground truth transformation parameters
+
+3. initial transformation parameters. 
+
+
 
 ## Performance
 
