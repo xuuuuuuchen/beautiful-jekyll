@@ -87,24 +87,57 @@ The 2-D/3-D registration problem can be formulated as **a regression problem**, 
 
 **Solution 1:** extracting a feature that is **sensitive** to the parameter residuals (残差) and is **insensitive** to the parameters. Such feature is referred to as **pose-index** feature.
 
-## Hierarchical Parameter Regression
+## Local Image Residual 1
 
+**Calculation of Local Image Residual:**
 
 ![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-07-23-readnote/2.png?raw=true) 
 
-1. 
+**Extraction of 3-D Points:** (The 3-D points used for calculating the LIR feature are extracted separately for each zone in two steps)
 
-2. an X-ray image, where denotes the unknown ground truth transformation parameters
+1. 3-D points that correspond to 2-D edges are extracted as candidates. (the candidates are extracted by **thresholding pixels with high gradient magnitudes** in a synthetic X-ray image) (i.e., generated using DRR) with and at the center of the zone **-->** **back-projecting** them to the corresponding 3-D structures.
 
-3. initial transformation parameters. 
+{: .box-note}
+find the dominant 3-D structure corresponding to the gradient in the X-ray image
+
+2. the candidates are filtered so that only the ones leading to LIR satisfying (7) and also not significantly overlapped are kept.
+
+## Hierarchical Parameter Regression
+
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-07-23-readnote/3.png?raw=true) 
+
+## CNN Regression Model
+
+**Two challenges:**
+1. it needs to be flexible enough to capture the complex mapping from X(t,It+t') to t'
+
+2. it needs to be light-weighted enough to be forwarded in real-time and stored in Random-Access Memory (RAM). Managing memory footprint is particularly important because regressors for all zones (in total 324) need to be loaded to RAM for optimal speed.
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIBigksQ2lH6db1XmzQHkP7IIOuQEyUFbPFnaNLw4Z1IKRpvWoQ) 
+**Structure of the CNN regression model.**
+
+**The input** of the regression model consists of N channels, corresponding to N LIRs.
 
 
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs0jrJxsEr4woOFZi6ACLBQy_SuuZC9y98phBOgcTrdH0dG65krA) 
+**Structure of the CNN applied for each input channel.**
+
+**The CNN Structure:** consists of five layers, including two 5*5 convolutional layers (**C1** and **C2**), each followed by a 2*2 max-pooling layers (**P1** and **P2**) with stride 2, and a fully-connected layer (**F1**) with 100 Rectified Linear Unit (ReLU) activations neurons. The feature vectors extracted from all input channels are then concatenated and connected to another fully-connected layer (**F2**) with 250 ReLU activations neurons. The output layer (**F3**) is fully-connected to F2, with each output node corresponding to one parameter in the group. Since the input channels have the same nature, i.e., they are LIRs at different locations, the weights in the CNNs are shared to reduce the memory footprint by
+times.
+
+**Loss:** The objective function to be minimized during the training is Euclidean loss:
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-07-23-readnote/4.png?raw=true) 
 
 ## Performance
 
+Instead of regressing the 6 parameters together, which makes the mapping to be regressed more complex as multiple con- founding factors are involved, they divide them into the following 3 groups, and regress them hierarchically: 
 
-*
+• Group 1: In-plane parameters
+the **easiest** to be estimated, because they cause simple while dominant rigid-body 2-D transformation of the object in the projection image that are less affected by the variations of the parameters in the other two groups. 
 
+• Group 2: Out-of-plane rotation parameters
+• Group 3: Out-of-plane translation parameter
+**most difficult** one to be estimated, because it only causes subtle scaling of the object in the projection image. The difficulty in estimating parameters in Group 2 falls in-between.
 
 ## Other Useful Info.
 
