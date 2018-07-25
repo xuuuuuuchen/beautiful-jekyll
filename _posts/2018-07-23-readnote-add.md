@@ -2,7 +2,6 @@
 layout: post
 published: Ture
 category: "Image Registration"
-category: "Deep Learning"
 title: 23 Jul 2018 Reading Note add
 subtitle: A CNN Regression Approach for Real-Time 2D 3D Registration
 image: https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/0b3369b950ca9b273b24a72b6023981d31b68ae2/2-Figure2-1.png
@@ -114,12 +113,13 @@ find the dominant 3-D structure corresponding to the gradient in the X-ray image
 2. it needs to be light-weighted enough to be forwarded in real-time and stored in Random-Access Memory (RAM). Managing memory footprint is particularly important because regressors for all zones (in total 324) need to be loaded to RAM for optimal speed.
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjIBigksQ2lH6db1XmzQHkP7IIOuQEyUFbPFnaNLw4Z1IKRpvWoQ) 
+
 **Structure of the CNN regression model.**
 
 **The input** of the regression model consists of N channels, corresponding to N LIRs.
 
-
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs0jrJxsEr4woOFZi6ACLBQy_SuuZC9y98phBOgcTrdH0dG65krA) 
+
 **Structure of the CNN applied for each input channel.**
 
 **The CNN Structure:** consists of five layers, including two 5*5 convolutional layers (**C1** and **C2**), each followed by a 2*2 max-pooling layers (**P1** and **P2**) with stride 2, and a fully-connected layer (**F1**) with 100 Rectified Linear Unit (ReLU) activations neurons. The feature vectors extracted from all input channels are then concatenated and connected to another fully-connected layer (**F2**) with 250 ReLU activations neurons. The output layer (**F3**) is fully-connected to F2, with each output node corresponding to one parameter in the group. Since the input channels have the same nature, i.e., they are LIRs at different locations, the weights in the CNNs are shared to reduce the memory footprint by
@@ -139,10 +139,6 @@ the **easiest** to be estimated, because they cause simple while dominant rigid-
 • Group 3: Out-of-plane translation parameter
 **most difficult** one to be estimated, because it only causes subtle scaling of the object in the projection image. The difficulty in estimating parameters in Group 2 falls in-between.
 
-## Other Useful Info.
-
-Object Detection [helpful slides link](https://www.slideshare.net/xavigiro/object-detection-d2l5-insightdcu-machine-learning-workshop-2017)
-(D2L5 Insight@DCU Machine Learning Workshop 2017)
 
 
 
