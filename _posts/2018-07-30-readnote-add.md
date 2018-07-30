@@ -2,8 +2,8 @@
 layout: post
 published: Ture
 category: "Image Registration"
-title: Non rigid Craniofacial 2D 3D Registration Using CNN Based Regression)
-subtitle: 30 Jul 2018 Reading Notes II Yuru Pei et al Sep 2017
+title: Yuru Pei 2017 (30 Jul 2018 Reading Notes II)
+subtitle:  Non-rigid Craniofacial 2D-3D Registration Using CNN-Based Regression
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog
 
 tags: [Reading Notes, Convolutional Neural Network, Image Registration]
@@ -19,6 +19,11 @@ tags: [Reading Notes, Convolutional Neural Network, Image Registration]
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog) 
 
+
+
+## Image Registration Background
+
+[[My Literature Review]](https://xuuuuuuchen.github.io/LiteratureReview_ImageRegistration/)
 
 
 ## Motivation 1

@@ -22,7 +22,7 @@ tags: [Reading Notes, Convolutional Neural Network, Image Registration]
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog) 
 
-## Background
+## Image Registration Background
 
 [[My Literature Review]](https://xuuuuuuchen.github.io/LiteratureReview_ImageRegistration/)
 
