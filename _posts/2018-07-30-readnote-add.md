@@ -2,8 +2,8 @@
 layout: post
 published: Ture
 category: "Image Registration"
-title: 30 Jul 2018 Reading Notes
-subtitle: ssEMnet (Serial-Section Electron Microscopy Image Registration Using a Spatial Transformer Network with Learned Features)
+title: 30 Jul 2018 Reading Notes II (Non-rigid Craniofacial 2D-3D Registration Using CNN-Based Regression)
+subtitle: Yuru Pei et al Sep 2017
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog
 
 tags: [Reading Note, Convolutional Neural Network, Image Registration]
@@ -11,15 +11,18 @@ tags: [Reading Note, Convolutional Neural Network, Image Registration]
 
 **Title:** ssEMnet: Serial-Section Electron Microscopy Image Registration Using a Spatial Transformer Network with Learned Features [Paper Link](https://arxiv.org/abs/1707.07833)
 
-**Authors:** Inwan Yoo, David G. C. Hildebrand, Willie F. Tobin, Wei-Chung Allen Lee, Won-Ki Jeong
+**Authors:** Yuru Pei, Yungeng Zhang, Haifang Qin, Gengyu Ma, Yuke Guo, Tianmin Xu, Hongbin Zha
 
-**Association:** Ulsan National Institute of Science and Technology, Ulsan, South Korea
+**Association:** Key Laboratory of Machine Perception (MOE), Department of Machine Intelligence, Peking University, Beijing, China
 
-**Submission:** Dec 2017
+**Submission:** Sep 2017
 
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog) 
 
 ## Background
+
+
+
 
 Wu et al. [[Paper]](https://ieeexplore.ieee.org/document/7314894/): "used a convolutional stacked auto-encoder (**CAE**) to extract features from fixed and moving images that are subsequently used in conventional deformable image registration algorithms. However, the CAE is decoupled from the image registration task and hence, it does not necessarily extract the features most descriptive for image registration. The training of the CAE was unsupervised, but the registration task was not learned end-to-end."
 
