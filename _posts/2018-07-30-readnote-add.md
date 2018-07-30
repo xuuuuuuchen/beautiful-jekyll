@@ -4,12 +4,12 @@ published: Ture
 category: "Image Registration"
 title: Yuru Pei 2017 (30 Jul 2018 Reading Notes II)
 subtitle:  Non-rigid Craniofacial 2D-3D Registration Using CNN-Based Regression
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog
+image: https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-319-67558-9_14/MediaObjects/456926_1_En_14_Fig3_HTML.gif
 
 tags: [Reading Notes, Convolutional Neural Network, Image Registration]
 ---
 
-**Title:** ssEMnet: Serial-Section Electron Microscopy Image Registration Using a Spatial Transformer Network with Learned Features [Paper Link](https://arxiv.org/abs/1707.07833)
+**Title:** Non-rigid Craniofacial 2D-3D Registration Using CNN-Based Regression [Paper Link](https://link.springer.com/chapter/10.1007/978-3-319-67558-9_14)
 
 **Authors:** Yuru Pei, Yungeng Zhang, Haifang Qin, Gengyu Ma, Yuke Guo, Tianmin Xu, Hongbin Zha
 
@@ -17,7 +17,7 @@ tags: [Reading Notes, Convolutional Neural Network, Image Registration]
 
 **Submission:** Sep 2017
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog) 
+![](https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-319-67558-9_14/MediaObjects/456926_1_En_14_Fig3_HTML.gif) 
 
 
 
