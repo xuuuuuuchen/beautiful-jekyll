@@ -2,8 +2,11 @@
 layout: post
 published: Ture
 category: "Image Registration"
-title: ssEMnet (Serial Section Electron Microscopy Image Registration Using a Spatial Transformer Network with Learned Features)
-subtitle: 30 Jul 2018 Reading Notes I Inwan Yoo et al 2017
+
+title: Inwan Yoo 2017 (30 Jul 2018 Reading Notes I) 
+
+subtitle: ssEMnet (Serial Section Electron Microscopy Image Registration Using a Spatial Transformer Network with Learned Features)
+
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog
 
 tags: [Reading Notes, Convolutional Neural Network, Image Registration]
