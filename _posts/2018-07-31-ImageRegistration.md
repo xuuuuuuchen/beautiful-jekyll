@@ -10,42 +10,38 @@ tags: [Literature Review, Image Registration]
 
 ![](https://www.wikihow.com/images/9/99/Do-a-Literature-Review-Step-13-Version-2.jpg) 
 
-## Introduction
+
+## Literature Review
+
+
+
+**Introduction**
 
 introducing two very important concepts that will prove crucial in understanding the inner workings of the Spatial Transformer layer. 
 
-**affine transformations**
-
-https://kevinzakka.github.io/2017/01/10/stn-part1/
-![](https://kevinzakka.github.io/assets/stn/affine.png) 
-
-When an image undergoes an affine transformation such as a rotation or scaling, the pixels in the image get moved around. This can be especially problematic when a pixel location in the output does not map directly to one in the input image.
-
-*To solve this problem:*
-
-In the illustration below, you can clearly see that the rotation places some points at locations that are not centered in the squares. This means that they would not have a corresponding pixel value in the original image.
-
-![](https://kevinzakka.github.io/assets/stn/stickman.png) 
-
-So for example, suppose that after rotating an image, we need to find the pixel value at the location ***(6.7, 3.2)***. The problem with this is that there is no such thing as fractional pixel locations.
-
-**bilinear interpolation**
-
-![](https://kevinzakka.github.io/assets/stn/interpol.png) 
 
 
-![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-07-26-readnote/1.png?raw=true) 
+## Deep Learning
 
-## Digitally Reconstructed Radiograph (DRR)
-
-![](https://media.springernature.com/lw785/springer-static/image/art%3A10.1186%2Fs12938-017-0353-8/MediaObjects/12938_2017_353_Fig1_HTML.gif) 
-
-![](https://image.slidesharecdn.com/presentation-100511175011-phpapp02/95/generation-of-planar-radiographs-from-3d-anatomical-models-using-the-gpu-3-728.jpg?cb=1273601116) 
-
-![](https://image.slidesharecdn.com/presentation-100714114159-phpapp01/95/generation-of-planar-radiographs-from-3d-anatomical-models-using-the-gpu-6-728.jpg?cb=1279107927) 
+for image registration, deep learning is very promising because
+1) is an unsupervised learning approach that does not require ground truth
+2) uses a hierarchical deep architec- ture to infer complex nonlinear relationships
+3) is completely data driven and not based on handcrafted feature selection
+4) can quickly and efficiently compute the hierarchical feature representation for any image patch in the testing data given the trained hierarchical deep architecture (or network).
 
 
-## Literature Review
+## Previous Methods
+
+1. Intensity-based feature selection methods:
+
+
+2. Handcrafted features, such as geometric moment invariants [15] or Gabor filter:
+
+3. Supervised learning-based methods:
+
+4. unsupervised learning-based feature selection methods:
+
+
 
 
 Wu et al. [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-31-readnote/) [[Paper]](https://ieeexplore.ieee.org/document/7314894/): "used a convolutional stacked auto-encoder (**CAE**) to extract features from fixed and moving images that are subsequently used in conventional deformable image registration algorithms. However, the CAE is decoupled from the image registration task and hence, it does not necessarily extract the features most descriptive for image registration. The training of the CAE was unsupervised, but the registration task was not learned end-to-end."
