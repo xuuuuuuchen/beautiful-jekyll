@@ -2,10 +2,10 @@
 layout: post
 published: Ture
 category: "Image Registration"
-title: 23 Jul 2018 Reading Notes add
+title: Shun Miao 2016 (23 Jul 2018 Reading Notes II)
 subtitle: A CNN Regression Approach for Real-Time 2D 3D Registration
 image: https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/0b3369b950ca9b273b24a72b6023981d31b68ae2/2-Figure2-1.png
-tags: [Reading Note, Convolutional Neural Network, Image Registration]
+tags: [Reading Notes, Image Registration]
 ---
 
 **Title:** A CNN Regression Approach for Real-Time 2D/3D Registration [Paper Link](https://ieeexplore.ieee.org/document/7393571/)
@@ -20,6 +20,10 @@ tags: [Reading Note, Convolutional Neural Network, Image Registration]
 
 {: .box-note}
 **Image registration** is a key component for medical image analysis to provide spatial correspondences.
+
+## Image Registration Background
+
+[[My Literature Review]](https://xuuuuuuchen.github.io/2018-07-31-ImageRegistration/)
 
 
 ## Contributions

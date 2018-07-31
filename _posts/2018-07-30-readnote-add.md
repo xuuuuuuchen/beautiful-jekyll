@@ -6,7 +6,7 @@ title: Yuru Pei 2017 (30 Jul 2018 Reading Notes II)
 subtitle:  Non-rigid Craniofacial 2D-3D Registration Using CNN-Based Regression
 image: https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-3-319-67558-9_14/MediaObjects/456926_1_En_14_Fig3_HTML.gif
 
-tags: [Reading Notes, Convolutional Neural Network, Image Registration]
+tags: [Reading Notes, Image Registration]
 ---
 
 **Title:** Non-rigid Craniofacial 2D-3D Registration Using CNN-Based Regression [Paper Link](https://link.springer.com/chapter/10.1007/978-3-319-67558-9_14)
