@@ -48,7 +48,7 @@ So for example, suppose that after rotating an image, we need to find the pixel 
 ## Literature Review
 
 
-Wu et al. [[Paper]](https://ieeexplore.ieee.org/document/7314894/): "used a convolutional stacked auto-encoder (**CAE**) to extract features from fixed and moving images that are subsequently used in conventional deformable image registration algorithms. However, the CAE is decoupled from the image registration task and hence, it does not necessarily extract the features most descriptive for image registration. The training of the CAE was unsupervised, but the registration task was not learned end-to-end."
+Wu et al. [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-31-readnote/) [[Paper]](https://ieeexplore.ieee.org/document/7314894/): "used a convolutional stacked auto-encoder (**CAE**) to extract features from fixed and moving images that are subsequently used in conventional deformable image registration algorithms. However, the CAE is decoupled from the image registration task and hence, it does not necessarily extract the features most descriptive for image registration. The training of the CAE was unsupervised, but the registration task was not learned end-to-end."
 
 Miao et al. [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-23-readnote-add/) "used a convolutional neural network (ConvNet) regressor to predict a transformation matrix for rigid registration of synthetic 2D to 3D images. "
 
