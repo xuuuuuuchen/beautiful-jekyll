@@ -4,7 +4,7 @@ published: Ture
 category: "Image Registration"
 title: Inwan Yoo 2017 (30 Jul 2018 Reading Notes I) 
 subtitle: ssEMnet (Serial Section Electron Microscopy Image Registration Using a Spatial Transformer Network with Learned Features)
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog
+image: https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/874dfe096b7d1315c9750f6f5658f0c050b2bd11/6-Figure4-1.png
 tags: [Reading Notes, Convolutional Neural Network, Image Registration]
 ---
 
@@ -16,11 +16,11 @@ tags: [Reading Notes, Convolutional Neural Network, Image Registration]
 
 **Submission:** Dec 2017
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUYBdlX5AoNbjJ9TbuGN9Wry_ceoFoqB4a7hPEUGI86a6XYdeog) 
+![](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/874dfe096b7d1315c9750f6f5658f0c050b2bd11/6-Figure4-1.png) 
 
 ## Image Registration Background
 
-[[My Literature Review]](https://xuuuuuuchen.github.io/LiteratureReview_ImageRegistration/)
+[[My Literature Review]](https://xuuuuuuchen.github.io/ImageRegistration/)
 
 ## Motivation 1
 Due to its image characteristics: 

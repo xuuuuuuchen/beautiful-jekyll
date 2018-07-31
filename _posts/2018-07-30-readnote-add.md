@@ -23,7 +23,7 @@ tags: [Reading Notes, Convolutional Neural Network, Image Registration]
 
 ## Image Registration Background
 
-[[My Literature Review]](https://xuuuuuuchen.github.io/LiteratureReview_ImageRegistration/)
+[[My Literature Review]](https://xuuuuuuchen.github.io/ImageRegistration/)
 
 
 ## Motivation 1
