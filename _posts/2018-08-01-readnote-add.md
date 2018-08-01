@@ -10,7 +10,7 @@ tags: [Literature Review, Image Registration]
 
 ![](https://www.wikihow.com/images/9/99/Do-a-Literature-Review-Step-13-Version-2.jpg) 
 
-**Title:** (Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17))  An Artificial Agent for Robust Image Registration [Paper Link](https://arxiv.org/abs/1611.10336)
+**Title:** An Artificial Agent for Robust Image Registration (Thirty-First AAAI Conference on Artificial Intelligence (AAAI-17)) [Paper Link](https://arxiv.org/abs/1611.10336)
 
 **Authors:** Rui Liao, Shun Miao, Pierre de Tournemire, Sasa Grbic, Ali Kamen, Tommaso Mansi, Dorin Comaniciu
 
@@ -53,7 +53,6 @@ to recover correspondences between two 3-D images acquired into the same coordin
 2. propose an effective data augmentation and sampling strategy so that the agent could be trained robustly using only a small number of labelled training pairs available from patients
 
 3. propose a hierarchical registration framework relying on the trained networks from the coarse 粗糙的 image layer to register successively the more refined (higher resolution) image layers.
-
 
 ## Method 
 
