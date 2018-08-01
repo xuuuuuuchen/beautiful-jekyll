@@ -20,7 +20,7 @@ tags: [Literature Review, Image Registration]
 
 ## Background of Deep Learning in Medical Image Analysis
 
-[Reading Notes]](https://xuuuuuuchen.github.io/2018-08-01-DeepLearninginMedicalImageAnalysis/)
+[NEED A Reading Notes]](https://xuuuuuuchen.github.io/2018-08-01-DeepLearninginMedicalImageAnalysis/)
 
 ## Image Registration Background
 
@@ -28,39 +28,31 @@ tags: [Literature Review, Image Registration]
 
 [[Literature Review]](https://xuuuuuuchen.github.io/2018-07-31-ImageRegistration/)
 
+## Slice-to-volume Medical Image Registration Background
+
+[NEED A Reading Notes]](https://xuuuuuuchen.github.io/2018-08-01-ImageRegistration-2D-3D/)
+
+
+## Motivation of 3-D medical image registration
+
+to recover correspondences between two 3-D images acquired into the same coordinate system from
+
+1. different patients
+
+2. the same patient at different time
+
+3. different modalities e.g. Computed Tomography (CT), Magnetic Resonance Imaging (MRI), Positron Emission Tomog- raphy (PET) etc.
+
+
 ## Contributions
 
-0. learn the hierarchical feature representations (discover compact and highly discriminative (区别的) features upon observed imaging data) directly from the observed medical images by using unsupervised deep learning paradigm.
+0. decompose the registration task into a sequence of (often easier) classification problems, i.e. finding the best action among a limited set of possible solutions to improve the alignment. Repeating this process can result in a converging solution. 
 
-1. introduce a stacked autoencoder (SAE) with convolutional network architecture **to identify intrinsic deep feature representations** in image patches.
+1. train the intelligent agent in a greedy supervised fashion, which is a magnitude more efficient with only a small fraction of the memory footprint than in standard DRL setup, where the agent learns through repeated trial and errors
 
-2. in order to accurately recognize complex morphological patterns in 3-D medical image patches, a deep learning feature selec- tion method is proposed. 
+2. propose an effective data augmentation and sampling strategy so that the agent could be trained robustly using only a small number of labelled training pairs available from patients
 
-1) it does not require manually labeled ground-truth data (that typically is a laborious, subjective, and error-prone process), so it does not suffer from the same limita- tions as those found in the supervised methods, and 
-
-2) it offers a hierarchical learning paradigm to learn not only low-level but also high-level features that are more flexible than conven- tional handcrafted features, or even the best features found by the existing supervised learning-based feature selection methods.
-
-
-3. Feature representations can be directly learned from the observed imaging data in a very short amount of time. (the proposed image registration framework can be quickly deployed to per- form deformable image registration on new image modalities or new imaging applications with little to even no human intervention.)
-
-3. difficulty in finding the optimal alignment parameters
-
-4. lack of global regularization and complicated parameter tuning
-
-## Motivation 
-Recent advances in deep neural networks:
-1. Convolutional neural networks and their variants have shown potential by largely outperforming conventional computer vision algorithms
-
-2. Spatial Transformer Networks (Max Jaderberg) uses a differentiable network module inside a CNN to overcome the drawbacks of CNNs (i.e., lack of scale- and rotation-invariance).
-
-
-1. a novel deep network model specifically designed **for ssEM image registration**.
-
-2. a novel combination of an STN and a convolutional autoencoder that generates a deformation map (i.e., vector map) for the entire image alignment via backpropagation of the network.
-
-3. propose a feature-based image similarity measure
-
-4. can easily extend to various applications by employing different feature encoding networks
+3. propose a hierarchical registration framework relying on the trained networks from the coarse 粗糙的 image layer to register successively the more refined (higher resolution) image layers.
 
 
 ## Method 
