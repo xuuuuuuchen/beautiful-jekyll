@@ -19,18 +19,27 @@ tags: [Reading Notes, Fully Convolutional Networks, Image Registration]
 
 ![](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/b99d31cd6cf75d36804a152d4d8f972b00c48478/3-Figure1-1.png) 
 
+
 .................................................................................................................................
-## Background of Deep Learning in Medical Image Analysis
+
+## >>> Background of Deep Learning in Medical Image Analysis
 
 [[NEED A Reading Notes]](https://xuuuuuuchen.github.io/2018-08-01-DeepLearninginMedicalImageAnalysis/)
 
-## Image Registration Background
+## >>> A Review: Robot-Assisted Endovascular Catheterization Technologies: 
+
+[[NEED A Reading Notes]](https://xuuuuuuchen.github.io/Robot-AssistedEndovascularCatheterizationTechnologies/)
+
+.................................................................................................................................
+## >>> Image Registration Basic Knowledge
 
 [[Basic Knowledge]](https://xuuuuuuchen.github.io/2018-07-31-ImageRegistration-basic/)
 
+## >>> Image Registration Literature Review
+
 [[Literature Review]](https://xuuuuuuchen.github.io/2018-07-31-ImageRegistration/)
 
-## Slice-to-volume Medical Image Registration Background
+## >>> Slice-To-Volume Medical Image Registration Background
 
 [[NEED A Reading Notes]](https://xuuuuuuchen.github.io/2018-08-01-ImageRegistration-2D-3D/)
 

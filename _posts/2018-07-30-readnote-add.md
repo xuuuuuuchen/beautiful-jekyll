@@ -21,9 +21,30 @@ tags: [Reading Notes, Image Registration]
 
 
 
-## Image Registration Background
+.................................................................................................................................
 
-[[My Literature Review]](https://xuuuuuuchen.github.io/2018-07-31-ImageRegistration/)
+## >>> Background of Deep Learning in Medical Image Analysis
+
+[[NEED A Reading Notes]](https://xuuuuuuchen.github.io/2018-08-01-DeepLearninginMedicalImageAnalysis/)
+
+## >>> A Review: Robot-Assisted Endovascular Catheterization Technologies: 
+
+[[NEED A Reading Notes]](https://xuuuuuuchen.github.io/Robot-AssistedEndovascularCatheterizationTechnologies/)
+
+.................................................................................................................................
+## >>> Image Registration Basic Knowledge
+
+[[Basic Knowledge]](https://xuuuuuuchen.github.io/2018-07-31-ImageRegistration-basic/)
+
+## >>> Image Registration Literature Review
+
+[[Literature Review]](https://xuuuuuuchen.github.io/2018-07-31-ImageRegistration/)
+
+## >>> Slice-To-Volume Medical Image Registration Background
+
+[[NEED A Reading Notes]](https://xuuuuuuchen.github.io/2018-08-01-ImageRegistration-2D-3D/)
+
+.................................................................................................................................
 
 
 ## Motivation 1

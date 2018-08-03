@@ -15,6 +15,18 @@ tags: [Reading List]
 
 -------------------------------------------------------------------------------------------------------------
 
+(2018-08-02-readnote)
+
+**Title:** Inverse Compositional Spatial Transformer Networks [Paper Link](https://arxiv.org/abs/1612.03897)
+
+**Authors:** Chen-Hsuan Lin, Simon Lucey
+
+**Association:** Carnegie Mellon University
+
+**Submission:** Dec 2016
+
+![](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/89ac47c1628d89d10549068467671e8e4ff13115/5-Figure5-1.png)
+
 -------------------------------------------------------------------------------------------------------------
 
 (2018-08-01-readnote-add-add-add)
