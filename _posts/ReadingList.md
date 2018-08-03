@@ -3,7 +3,8 @@ layout: post
 published: Ture
 category: "Reading List"
 title: Reading List
-image: https://tedconfblog.files.wordpress.com/2014/06/summerreadinglist_istock_34481384_hires_983px.png?w=900&h=498
+subtitle: Reading List
+image: https://www.penguin.co.uk/content/dam/prh-consumer/ladybird/articles/2016/2017/apr/DaddyPigReading_Learning-(2).png
 tags: [Reading List]
 ---
 
