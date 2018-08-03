@@ -7,6 +7,7 @@ subtitle: Reading List
 image: https://www.penguin.co.uk/content/dam/prh-consumer/ladybird/articles/2016/2017/apr/DaddyPigReading_Learning-(2).png
 tags: [Reading List]
 ---
+![](https://www.penguin.co.uk/content/dam/prh-consumer/ladybird/articles/2016/2017/apr/DaddyPigReading_Learning-(2).png)
 
 
 .................................................................................................................................

@@ -1,25 +1,88 @@
 ---
 layout: post
 published: Ture
-category: "Literature Review of Image Registration"
-title: Literature Review of Image Registration
-image: https://i.stack.imgur.com/vipHn.jpg
-
-tags: [Literature Review, Image Registration]
+category: "Literature Review of X-ray Landmark Detection"
+title: Literature Review of X-ray Landmark Detection
+image: http://www-o.ntust.edu.tw/~cweiwang/celph/images/output.gif
+tags: [Literature Review, X-ray, Landmark, Detection]
 ---
 
-![](https://i.stack.imgur.com/vipHn.jpg) 
+
+
 
 ## Motivation
+
+In clinical practice, manual marking is required (usually trace out craniofacial structure contours on X-ray images first, and then extract landmarks from linear and angular reference lines and other geometrical shapes.) 
+
+---> However, manual marking is time-consuming and subjective, and this tends to suffer from intra- and inter-observer errors. 
+
+---> In order to deal with issues of manual marking, many clinical research studies focused on landmark identification problems.
+
+---> However, auto-identification of anatomical landmarks is difficult and poorly explored due to the complexity and variability of X-ray images.
+
+---> include (1) variations on individual structures, (2) image blurs caused by device-specific projection magnifications, (3) and image complexity due to the overlapping contralateral structures.
+
+
+
+
+
 
 
 ## Background
 
-One of the images is referred to as the **moving** or **source** images.
-The others are referred to as the **target**, **fixed** or **sensed** images.
+- automatic localization/identifica- tion of **cephalometric** landmarks
 
-Image registration can be classified into intensity-based and feature-based.
->A. Ardeshir Goshtasby: 2-D and 3-D Image Registration for Medical, Remote Sensing, and Industrial Applications, Wiley Press, 2005.
+In 2006, a modified active shape model to detect 12 anatomical landmarks, achieving a 71% success rate of landmark de- tection within 2.0 mm and 88% within 4.0 mm. 
+
+>W. Yue, D. Yin, C. Li, G. Wang, and T. Xu, “Automated 2-D cephalo- metric analysis on x-ray images by a model-based approach,” IEEE Trans. Biomed. Eng., vol. 53, no. 8, pp. 1615– 1623, Aug. 2006
+
+In 2009, combined neural networks with modified active shape models and developed a techniquewith 93% landmark detection accuracy for bony structures within 5.0 mm.
+
+>R. Kafieh, S. Sadri, A. Mehri, and H. Raji, “Discrimination of bony structures in cephalograms for automatic landmark detection,” Commun. Comput. Inf. Sci., vol. 6, no. 1, pp. 609–620, 2009.
+
+In 2013, an automatic cephalometric landmark detection method, which uses Zernike moment-based features for initial landmark estimation and computes small expectation window, and resulted in a mean error of 1.84 mm and standard deviation is 1.24 for 18 observed landmarks. However, variations in image data (e.g. image quality, imaging radiation time, subject age and gender) and evaluation approaches (e.g. the size of the manually obtained ground truth data from one pixel to a square region) greatly influence the evaluation outcome.
+
+>A. Kaur and C. Singh, “Automatic cephalometric landmark detection using zernike moments and template matching,” Signal, Image Video Process., vol. 9, no. 1, pp. 117–132, 2015.
+
+
+In 2014, developed a framework that describes the intensity appearance of each landmark by **Haar-like features** and applies the **theory of random forests (RFs)** to combine these features into a landmark candidate point detector. 
+
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFzKcU3s5bJKxmagKXIqBpIQYLDtEuibaoBaR48dm3Yvahp1y) 
+
+manually placed 44 additional auxiliary landmarks at visually distinctive locations such as the nose tip and corners of cervical vertebrae.
+
+>B. Ibragimov, B. Likar, F. Pernuš, and T. Vrtovec, “Automatic cephalometric X-ray landmark detection by applying game theory and random forests,” in Proc. ISBI Int. Symp. Biomed. Imag. 2014, Au- tomat. Cephalometric X-Ray Landmark Detection Challenge, Beijing, China, 2014, pp. 1–8
+
+In 2014, built a fully automatic algorithm for landmark detection on 2D cephalometric X-ray images using RF regression.
+includes two phases: (1) landmark detection phase and (2) landmark modification phase.
+
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-07-readnote/1.png?raw=true) 
+
+To modify landmark positions, which are not correctly detected, a **sparse shape composition model** is built. The landmark detection phase can be further divided into two steps: **a)** RF-based landmark detector training step, **b)** landmark prediction step. RF-based landmark detector training is performed only once on 100 training images and is independent from any test image. it trains a separate RF-based landmark detector for each landmark, and therefore they obtain 19 detectors for all landmark positions. Given
+
+
+>C. Chu, C. Chen, L.-P. Nolte, and G. Zheng, “Fully automatic cephalo- metric x-ray landmark detection using random forest regression and sparse shape composition,” in Proc. ISBI Int. Symp. Biomed. Imag. 2014, Automat. Cephalometric X-Ray LandmarkDetection Challenge, Beijing, China, 2014, pp. 9–16
+
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-07-readnote/3.png?raw=true) 
+
+In 2014, Fully-automatic landmark detection in cephalometric X-ray images by data-driven image displacement estimation (Switzerland). 
+
+>C. Chen and G. Zheng, “Fully-automatic landmark detection in cephalometric x-ray images by data-driven image displacement es- timation,” in Proc. ISBI Int. Symp. Biomed. Imag. 2014, Automat. Cephalometric X-Ray Landmark Detection Challenge, Beijing, China, 2014, pp. 17–24.
+
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-07-readnote/4.png?raw=true) 
+
+In 2014, randomly sample a set of square image patches around the ground-truth landmark location.
+
+>H. Mirzaalian and G. Hamarneh, “Automatic globally-optimal pic- torial structures with random decision forest based likelihoods for cephalometric x-ray landmark detection,” in Proc. ISBI Int. Symp. Biomed. Imag. 2014, Automat. Cephalometric X-Ray Landmark Detection Challenge, Beijing, China, 2014, pp. 25–36.
+
+In 2014, A machine learning tree-based ap- proach (Belgium).
+
+>R. Vandaele, R. Marée, S. Jodogne, and P. Geurts, “Automatic cephalometric x-ray landmark detection challenge 2014: A tree-based approach,” in Proc. ISBI Int. Symp. Biomed. Imag. 2014, Automat. Cephalometric X-Ray Landmark Detection Challenge, Beijing, China, 2014, pp. 37–44.
+
+
+
+
+
 
 - Intensity-based feature selection methods
 
@@ -101,59 +164,6 @@ for image registration, deep learning is very promising because
 [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-31-readnote/)
 
 
-Contributions:
-Comment: "used a convolutional stacked auto-encoder (**CAE**) to extract features from fixed and moving images that are subsequently used in conventional deformable image registration algorithms. However, the CAE is decoupled from the image registration task and hence, it does not necessarily extract the features most descriptive for image registration. The training of the CAE was unsupervised, but the registration task was not learned end-to-end."
+## Evaluation Methods
 
-
-> Miao et al. A CNN regression approach for real-time 2D/3D registration. IEEE transactions on medical imaging. 2016 [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-23-readnote-add/)
-
-Contributions:
-Comment:" used a convolutional neural network (ConvNet) regressor to predict a transformation matrix for rigid registration of synthetic 2D to 3D images. "
-
-
-> Liao, Rui, et al. "An Artificial Agent for Robust Image Registration." AAAI. 2017. [[NEED A Reading Note]](https://xuuuuuuchen.github.io/2018-08-01-readnote-add/) 
-
-Contributions:
-Comment:" used a ConvNet for intrapatient rigid registration of CT to cone-beam CT applied to either cardiac or abdominal images. "
-
-"Both registration methods (Miao et al. and Liao et al.) were supervised: for training, transformation parameters were generated, which is task specific and highly challenging."
-
-
-
-> Jaderberg, Max, Karen Simonyan, and Andrew Zisserman. "Spatial transformer networks." Advances in neural information processing systems. 2015. [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-26-readnote/) [[Paper]](https://arxiv.org/abs/1506.02025)  *(‎Cited by 901)*: " 
-
-Contributions:
-Comment:" introduced the spatial transformer network (STN) that can be used as a building block that aligns input images in a larger network that performs a particular task. By training the entire network end-to-end, the embedded STN deduces optimal alignment for solving that specific task. "
-"However, alignment is not guaranteed, and it is only performed when required for the task of the entire network. The STNs were used for affine transformations, as well as deformable transformations using thin-plate splines. However, an STN needs many labeled training examples, and to the best of our knowledge, have not yet been used in medical imaging."
-
-
-Spatial Transformer Networks (STN) **Applications**
-
-> Yoo, Inwan, et al. "ssEMnet: Serial-section Electron Microscopy Image Registration using a Spatial Transformer Network with Learned Features." Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support. Springer, Cham, 2017. 249-257. [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-30-readnote/)
-
-Contributions:
-Comment:" 
-
-
-> Li H, Fan Y. Non-rigid image registration using fully convolutional networks with deep self-supervision. arXiv preprint arXiv:1709.00799. 2017 Sep 4. [[NEED A Reading Note]](https://xuuuuuuchen.github.io/2018-08-01-readnote-add-add/)
-
-Contributions:
-Comment:" 
-
-
-a recurrent neural network (RNN) + STN
-
-> Li H, Fan Y. Non-rigid image registration using fully convolutional networks with deep self-supervision. arXiv preprint arXiv:1709.00799. 2017 Sep 4. [[NEED A Reading Note]](https://xuuuuuuchen.github.io/2018-08-01-readnote-add-add-add/)
-
-Contributions:
-Comment:" 
-
-> Lin, Chen-Hsuan, and Simon Lucey. "Inverse compositional spatial transformer networks." arXiv preprint arXiv:1612.03897 (2016). [[NEED A Reading Note]](https://xuuuuuuchen.github.io/2018-08-02-readnote/)
-
-Contributions:
-Comment:" 
-
-
-
-
-
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-07-readnote/2.png?raw=true) 
