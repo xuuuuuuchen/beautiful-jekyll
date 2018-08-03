@@ -123,7 +123,6 @@ Contributions:
 Comment:" introduced the spatial transformer network (STN) that can be used as a building block that aligns input images in a larger network that performs a particular task. By training the entire network end-to-end, the embedded STN deduces optimal alignment for solving that specific task. "
 "However, alignment is not guaranteed, and it is only performed when required for the task of the entire network. The STNs were used for affine transformations, as well as deformable transformations using thin-plate splines. However, an STN needs many labeled training examples, and to the best of our knowledge, have not yet been used in medical imaging."
 
-Comment:" The focus of STN was not an accurate alignment of two images, but a rough transformation of a single input image to a canonical form, for the purpose of improved classification accuracy. More- over its application has been demonstrated only on 2-D im- ages, not 3-D volumes."
 
 Spatial Transformer Networks (STN) **Applications**
 

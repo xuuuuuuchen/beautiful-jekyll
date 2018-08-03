@@ -2,8 +2,8 @@
 layout: post
 published: Ture
 category: "Image Registration"
-title: Basic Knowledge of Image Registration
-subtitle: Scalable High-Performance Image Registration Framework by Unsupervised Deep Feature Representations Learning
+title: Rui Liao 2017 (04 Aug 2018 Reading Notes II)
+subtitle: An Artificial Agent for Robust Image Registration
 image: https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/e254ed51e3dfe438a36bb027aa75793f78f556c0/4-Figure2-1.png
 tags: [Literature Review, Image Registration]
 ---
