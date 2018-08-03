@@ -1,7 +1,7 @@
 ---
 layout: post
 published: Ture
-category: "Image Registration"
+category: "Literature Review"
 title: Basic Knowledge of Image Registration
 image: https://www.wikihow.com/images/9/99/Do-a-Literature-Review-Step-13-Version-2.jpg
 

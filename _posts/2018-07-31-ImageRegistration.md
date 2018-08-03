@@ -1,7 +1,7 @@
 ---
 layout: post
 published: Ture
-category: "Image Registration"
+category: "Literature Review"
 title: Literature Review of Image Registration
 image: https://i.stack.imgur.com/vipHn.jpg
 
