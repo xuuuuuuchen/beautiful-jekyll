@@ -3,8 +3,7 @@ layout: post
 published: Ture
 category: "Reading List"
 title: Reading List
-image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71MujwMCLYPpf4iEX891R74hYvmB3RcmC_Ea5O3qvoXE3tzfO
-
+image: https://tedconfblog.files.wordpress.com/2014/06/summerreadinglist_istock_34481384_hires_983px.png?w=900&h=498
 tags: [Reading List]
 ---
 
