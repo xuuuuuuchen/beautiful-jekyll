@@ -30,7 +30,11 @@ In clinical practice, manual marking is required (usually trace out craniofacial
 
 ## Background
 
+................................................................................
+
 - automatic localization/identifica- tion of **cephalometric** landmarks
+
+................................................................................
 
 In 2006, a modified active shape model to detect 12 anatomical landmarks, achieving a 71% success rate of landmark de- tection within 2.0 mm and 88% within 4.0 mm. 
 
@@ -47,7 +51,7 @@ In 2013, an automatic cephalometric landmark detection method, which uses Zernik
 
 In 2014, developed a framework that describes the intensity appearance of each landmark by **Haar-like features** and applies the **theory of random forests (RFs)** to combine these features into a landmark candidate point detector. 
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFzKcU3s5bJKxmagKXIqBpIQYLDtEuibaoBaR48dm3Yvahp1y) 
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-07-readnote/5.png?raw=true) 
 
 manually placed 44 additional auxiliary landmarks at visually distinctive locations such as the nose tip and corners of cervical vertebrae.
 
