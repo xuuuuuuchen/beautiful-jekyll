@@ -133,7 +133,12 @@ they use **extremely randomized trees** (绝对随机森林) as the pixel classi
 
 
 >R. Vandaele, R. Marée, S. Jodogne, and P. Geurts, “Automatic cephalometric x-ray landmark detection challenge 2014: A tree-based approach,” in Proc. ISBI Int. Symp. Biomed. Imag. 2014, Automat. Cephalometric X-Ray Landmark Detection Challenge, Beijing, China, 2014, pp. 37–44.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-07-readnote/7.png?raw=true) 
 
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-07-readnote/8.png?raw=true) 
+
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-07-readnote/9.png?raw=true) 
 
 ................................................................................
 
