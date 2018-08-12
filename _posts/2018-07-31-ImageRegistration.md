@@ -118,6 +118,7 @@ Comment: "used a convolutional stacked auto-encoder (**CAE**) to extract feature
 > Bob de Vos et al., “End-to-End Unsupervised Deformable Image Registration with a Convolutional Neural Network
 ” CVPR 2017
 [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-25-readnote/)
+
 Comment: end-to-end by unsupervised optimization of a similarity metric between input image pairs.
 Comment: test on handwritten digits and image slices from MRI scans.
 

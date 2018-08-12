@@ -49,9 +49,13 @@ tags: [Literature Review, Image Registration]
 
 ## Contributions
 
-**(0)** 
+**(0)** decompose the registration task into a se- quence of (often easier) classification problems, i.e. find- ing the best action among a limited set of possible solutions to improve the alignment. Repeating this process can result in a converging solution. 
 
-**(1)** 
+**(1)** We train the intelligent agent in a greedy supervised fashion, which is a magni- tude more efficient with only a small fraction of the mem- ory footprint than in standard DRL setup, where the agent learns through repeated trial and errors (Mnih et al. 2015; Silver et al. 2016); 3)
+
+**(2)** propose an effective data aug- mentation and sampling strategy so that the agent could be trained robustly using only a small number of labelled train- ing pairs available from patients;
+
+**(3)** For a combined robust- ness and accuracy, we propose a hierarchical registration framework relying on the trained networks from the coarse image layer to register successively the more refined (higher- resolution) image layers
 
 
 ## Methods
