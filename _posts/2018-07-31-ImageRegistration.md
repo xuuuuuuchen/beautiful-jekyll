@@ -24,15 +24,15 @@ Image registration can be classified into intensity-based and feature-based.
 - Intensity-based feature selection methods
 
 Intensity-based methods compare intensity patterns in images via correlation metrics
-However, two image patches that show similar, or even the same, distribution of intensity values do not guarantee the two points are corresponded from an anatomical (解剖学的; 结构上的) point of view
+However, two image patches that show similar, or even tstretchhe same, distribution of intensity values do not guarantee the two points are corresponded from an anatomical (解剖学的; 结构上的) point of view
 
 >V. Arsigny et al., “A log-Euclidean framework for statistics on diffeo- morphisms,” in Proc. Med. Image Comput. Comput.-Assisted Intervention Conf., 2006, pp. 924–931.
 
 >J. Ashburner, “A fast diffeomorphic image registration algorithm,” Neu- roImage, vol. 38, pp. 95–113, 2007.
 
->B. Avants et al., “Symmetric diffeomorphic image registration: Eval- uating automated labeling of elderly and neurodegenerative cortex and frontal lobe,” in Proc. Int. Workshop Biomed. Image Registration, 2006, pp. 50–57.
+>B. Avants et al., “Symmetric diffeomorphic image registration: Evaluating automated labeling of elderly and neurodegenerative cortex and frontal lobe,” in Proc. Int. Workshop Biomed. Image Registration, 2006, pp. 50–57.
 
->D. Rueckert et al., “Nonrigid registration using free-form deforma- tions: Application to breast MR images,” IEEE Trans. Med. Imag., vol. 18, no. 8, pp. 712–721, Aug. 1999.
+>D. Rueckert et al., “Nonrigid registration using free-form deformations: Application to breast MR images,” IEEE Trans. Med. Imag., vol. 18, no. 8, pp. 712–721, Aug. 1999.
 
 >T. Vercauteren et al., “Diffeomorphic demons: Efficient non-parametric image registration,” NeuroImage, vol. 45, pp. S61–S72, 2009.
 
@@ -40,10 +40,10 @@ However, two image patches that show similar, or even the same, distribution of 
 
 feature-based methods find correspondence between image features such as points, lines, and contours.
 
-Handcrafted features, such as geometric moment invariants:
+**Handcrafted features**, such as geometric moment invariants:
 >D. Shen and C. Davatzikos, “HAMMER: Hierarchical attribute matching mechanism for elastic registration,” IEEE Trans.Med.Imag., vol. 21, no. 11, pp. 1421–1439, Nov. 2002.
 
-Gabor filter:
+**Gabor filter**:
 >Y. Zhan and D. Shen, “Deformable segmentation of 3-D ultrasound prostate images using statistical texture matching method,” IEEE Trans. Image Process., vol. 25, no. 3, pp. 256–272, Mar. 2006.
 
 Others:
@@ -59,7 +59,7 @@ Others:
 
 "have been proposed to select the best set of features from a large feature pool that may include plenty of redundant handcrafted features. However, for this approach, the ground-truth data with known correspondences across the set of training images is required. Because human experts are typically needed to generate ground- truth data, it is well known that obtaining this type of data can be a very laborious and subjective process. In many cases, ground- truth data are simply not available, and even if it does exist, the size of the training population may be very small, which may dramatically affect the accuracy of the registration method. In general, image registration methods that use supervised learning for feature selection."
 
->R. W. K. So and A. C. S. Chung, “Learning-based non-rigid image regis- tration using prior joint intensity distributions with graph-cuts,” presented at the 18th Int. Conf. Image Process., Brussels, Belgium, 2011.
+>R. W. K. So and A. C. S. Chung, “Learning-based non-rigid image registration using prior joint intensity distributions with graph-cuts,” presented at the 18th Int. Conf. Image Process., Brussels, Belgium, 2011.
 
 >Y. Ou et al., “DRAMMS: Deformable registration via attribute matching and Mutual-saliency weighting,” Med. Image Anal., vol. 15, pp. 622–639, 2011.
 
@@ -67,7 +67,7 @@ Others:
 
 >J. Jiang et al., “Learning based coarse-to-fine image registration,” pre- sented at the IEEE Conf. Comput. Vision Pattern Recog., Anchorage, AK, USA, 2008.
 
->G. Wu et al., “Learning best features and deformation statistics for hi- erarchical registration of MR brain images,” Inf. Process. Med. Imag., vol. 20, pp. 160–171, 2007.
+>G. Wu et al., “Learning best features and deformation statistics for hierarchical registration of MR brain images,” Inf. Process. Med. Imag., vol. 20, pp. 160–171, 2007.
 
 - unsupervised learning-based feature selection methods:
 
@@ -86,39 +86,66 @@ The general concept behind deep learning is to learn hierarchical feature repres
 
 for image registration, deep learning is very promising because
 1) is an unsupervised learning approach that does not require ground truth
-2) uses a hierarchical deep architec- ture to infer complex nonlinear relationships
+2) uses a hierarchical deep architecture to infer complex nonlinear relationships
 3) is completely data driven and not based on handcrafted feature selection
 4) can quickly and efficiently compute the hierarchical feature representation for any image patch in the testing data given the trained hierarchical deep architecture (or network).
 
+## Previous Methods
+
+> Stefanie Demirci et al. 3D Stent Recovery from One X-Ray Projection 2011
+[[Reading Note]](https://xuuuuuuchen.github.io/2018-08-03-readnote/)
+
+Comment:  a novel algorithm to match a 3D model of the stent graft to an intraoperative 2D image showing the device and stent graft detection in 2D and correct backprojection into 3D
+Comment: 2D to 3D
+.................................................................................................................................
 
 - unsupervised deep learning-based fmethods:
 
->G. Wu et al., “Unsupervised deep feature learning for deformable image registration of MR brains,” presented at the 16th Int. Conf. Med. Imag. Comput. Comput. Assisted Intervention, Nagoya, Japan, 2013.
+.................................................................................................................................
+> Guha Balakrishnan et al. "An Unsupervised Learning Model for Deformable Medical Image Registration" CVPR 2018 
+[[Reading Note]](https://xuuuuuuchen.github.io/2018-08-12-readnote-add/)
 
-## Previous Methods
-
->G. Wu et al.. "Scalable high-performance image registration framework by unsupervised deep feature representations learning." IEEE Transactions on Biomedical Engineering 2016
+> G. Wu et al.. "Scalable high-performance image registration framework by unsupervised deep feature representations learning." IEEE Transactions on Biomedical Engineering 2016
 [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-31-readnote/)
-
 
 Contributions:
 Comment: "used a convolutional stacked auto-encoder (**CAE**) to extract features from fixed and moving images that are subsequently used in conventional deformable image registration algorithms. However, the CAE is decoupled from the image registration task and hence, it does not necessarily extract the features most descriptive for image registration. The training of the CAE was unsupervised, but the registration task was not learned end-to-end."
 
 
+> G. Wu et al., “Unsupervised deep feature learning for deformable image registration of MR brains,” presented at the 16th Int. Conf. Med. Imag. Comput. Comput. Assisted Intervention, Nagoya, Japan, 2013.
+
+
+> Bob de Vos et al., “End-to-End Unsupervised Deformable Image Registration with a Convolutional Neural Network
+” CVPR 2017
+[[Reading Note]](https://xuuuuuuchen.github.io/2018-07-25-readnote/)
+Comment: end-to-end by unsupervised optimization of a similarity metric between input image pairs.
+Comment: test on handwritten digits and image slices from MRI scans.
+
+.................................................................................................................................
+
+- supervised deep learning-based fmethods:
+
+.................................................................................................................................
+
+> Liao, Rui, et al. "An Artificial Agent for Robust Image Registration." AAAI. 2017. 
+[[Reading Note]](https://xuuuuuuchen.github.io/2018-08-01-readnote-add/) 
+
+Contributions:" used a ConvNet for intrapatient rigid registration of CT to cone-beam CT applied to either cardiac or abdominal images.  were supervised: for training, transformation parameters were generated, which is task specific and highly challenging."
+Comment: RL - Markov Decision Processes
+
 > Miao et al. A CNN regression approach for real-time 2D/3D registration. IEEE transactions on medical imaging. 2016 [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-23-readnote-add/)
 
-Contributions:
-Comment:" used a convolutional neural network (ConvNet) regressor to predict a transformation matrix for rigid registration of synthetic 2D to 3D images. "
+Contributions:  employs CNN regressors to directly estimate the transformation parameters
+
+Comment: used a convolutional neural network (ConvNet) regressor to predict a transformation matrix for rigid registration of synthetic 2D to 3D images. (x-ray; digitally reconstructed radiograph DRR)
+Comment: 2D to 3D
 
 
-> Liao, Rui, et al. "An Artificial Agent for Robust Image Registration." AAAI. 2017. [[NEED A Reading Note]](https://xuuuuuuchen.github.io/2018-08-01-readnote-add/) 
 
-Contributions:
-Comment:" used a ConvNet for intrapatient rigid registration of CT to cone-beam CT applied to either cardiac or abdominal images. "
+>  Xiao Yang et al. Quicksilver (Fast predictive image registration – A deep learning approach) 2017
+[[Reading Note]](https://xuuuuuuchen.github.io/2018-07-23-readnote/)
 
-"Both registration methods (Miao et al. and Liao et al.) were supervised: for training, transformation parameters were generated, which is task specific and highly challenging."
-
-
+Comment: a fast deformable image registration method using Large Deformation Diffeomorphic Metric Mapping (LDDMM) model.
 
 > Jaderberg, Max, Karen Simonyan, and Andrew Zisserman. "Spatial transformer networks." Advances in neural information processing systems. 2015. [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-26-readnote/) [[Paper]](https://arxiv.org/abs/1506.02025)  *(‎Cited by 901)*: " 
 
@@ -127,12 +154,20 @@ Comment:" introduced the spatial transformer network (STN) that can be used as a
 "However, alignment is not guaranteed, and it is only performed when required for the task of the entire network. The STNs were used for affine transformations, as well as deformable transformations using thin-plate splines. However, an STN needs many labeled training examples, and to the best of our knowledge, have not yet been used in medical imaging."
 
 
+
 Spatial Transformer Networks (STN) **Applications**
 
 > Yoo, Inwan, et al. "ssEMnet: Serial-section Electron Microscopy Image Registration using a Spatial Transformer Network with Learned Features." Deep Learning in Medical Image Analysis and Multimodal Learning for Clinical Decision Support. Springer, Cham, 2017. 249-257. [[Reading Note]](https://xuuuuuuchen.github.io/2018-07-30-readnote/)
 
 Contributions:
-Comment:" 
+Comment:" not too novel just application on ssEM image
+
+
+> Yuru Pei , et al. "Non-rigid Craniofacial 2D-3D Registration Using CNN-Based Regression" International Workshop on Deep Learning in Medical Image,  2017
+[[Need a Reading Note]](https://xuuuuuuchen.github.io/2018-07-30-readnote-add/)
+
+Contributions: 
+Comment: 
 
 
 > Li H, Fan Y. Non-rigid image registration using fully convolutional networks with deep self-supervision. arXiv preprint arXiv:1709.00799. 2017 Sep 4. [[NEED A Reading Note]](https://xuuuuuuchen.github.io/2018-08-01-readnote-add-add/)
@@ -143,7 +178,7 @@ Comment:"
 
 a recurrent neural network (RNN) + STN
 
-> Li H, Fan Y. Non-rigid image registration using fully convolutional networks with deep self-supervision. arXiv preprint arXiv:1709.00799. 2017 Sep 4. [[NEED A Reading Note]](https://xuuuuuuchen.github.io/2018-08-01-readnote-add-add-add/)
+> Hongming Li, Fan Y. Non-rigid image registration using fully convolutional networks with deep self-supervision. arXiv preprint arXiv:1709.00799. 2017 Sep 4. [[NEED A Reading Note]](https://xuuuuuuchen.github.io/2018-08-01-readnote-add-add-add/)
 
 Contributions:
 Comment:" 
@@ -152,8 +187,5 @@ Comment:"
 
 Contributions:
 Comment:" 
-
-
-
 
 

@@ -54,14 +54,16 @@ tags: [Literature Review, Image Registration]
 **(1)** 
 
 
-![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-03-readnote/1.png?raw=true) 
-
-[My stent 3D model code (matlab)]](https://xuuuuuuchen.github.io/)
-
-
 ## Methods
 
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-12-readnote/8.jpg?raw=true) 
 
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-12-readnote/9.jpg?raw=true) 
 
-## Performance
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-12-readnote/10.jpg?raw=true) 
+
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-12-readnote/11.jpg?raw=true) 
+
+![](https://github.com/xuuuuuuchen/xuuuuuuchen.github.io/blob/master/img/2018-08-12-readnote/12.jpg?raw=true) 
+
 
